@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/etprinciple"
         android:hint="Enter Principle"
+        android:inputType="number"
         android:textSize="20sp"
         android:layout_margin="10dp"/>
     <EditText
@@ -18,6 +19,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/ettime"
         android:hint="Enter Time"
+        android:inputType="number"
         android:textSize="20sp"
         android:layout_margin="10dp"/>
     <EditText
@@ -25,6 +27,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/etrate"
         android:hint="Enter Rate"
+        android:inputType="number"
         android:textSize="20sp"
         android:layout_margin="10dp"/>
 
