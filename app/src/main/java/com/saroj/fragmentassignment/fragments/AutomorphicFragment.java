@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,11 @@ public class AutomorphicFragment extends Fragment implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
+        if (TextUtils.isEmpty(etnumber.getText())) {
+            etnumber.setError("Please Enter Number");
+            Toast.makeText(getActivity(), "Please Enter Number", Toast.LENGTH_SHORT).show();
+            return;
+        }
         int num = Integer.parseInt(etnumber.getText().toString());
         int div, c=0, sq, rem;
         c=0;
