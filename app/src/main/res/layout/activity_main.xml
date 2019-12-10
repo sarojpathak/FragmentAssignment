@@ -14,64 +14,50 @@
         android:rowCount="3">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Area Of Circle"
-            android:textSize="10sp"
+            android:background="@color/colorPrimaryDark"
             android:id="@+id/btnareaofcircle"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"/>
+            style="@style/MainActivity"
+            android:text="Area Of Circle" />
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ArmStrong Number"
-            android:textSize="10sp"
+            android:background="@color/colorPrimaryDark"
             android:id="@+id/btnarmstrong"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"/>
+            style="@style/MainActivity"
+            android:text="ArmStrong Number" />
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Automorphic Number"
-            android:textSize="10sp"
+            android:background="@color/colorPrimaryDark"
             android:id="@+id/btnautomorphic"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"/>
+            style="@style/MainActivity"
+            android:text="Automorphic Number" />
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Palindrome Number"
-            android:textSize="10sp"
+            android:background="@color/colorPrimaryDark"
             android:id="@+id/btnpalindrome"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"/>
+            style="@style/MainActivity"
+            android:text="Palindrome Number" />
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Simple Interest"
-            android:textSize="10sp"
+            android:background="@color/colorPrimaryDark"
             android:id="@+id/btnsimpleinterest"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"/>
+            style="@style/MainActivity"
+            android:text="Simple Interest" />
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Swap Number"
-            android:textSize="10sp"
+            android:background="@color/colorPrimaryDark"
             android:id="@+id/btnswap"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"/>
+            style="@style/MainActivity"
+            android:text="Swap Number" />
 
     </GridLayout>
 
     <LinearLayout
+        android:id="@+id/fragView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:id="@+id/fragView">
+        android:orientation="vertical">
 
     </LinearLayout>
-
 
 
 </LinearLayout>

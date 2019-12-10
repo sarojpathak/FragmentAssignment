@@ -46,6 +46,6 @@
         android:layout_margin="30dp"
         android:layout_gravity="center"
         android:id="@+id/Res"
-        android:textSize="50sp"></TextView>
+        android:textSize="20sp"></TextView>
 
 </LinearLayout>

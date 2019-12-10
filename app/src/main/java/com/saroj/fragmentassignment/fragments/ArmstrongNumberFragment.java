@@ -64,9 +64,9 @@ public class ArmstrongNumberFragment extends Fragment implements View.OnClickLis
             temp=temp/10;
         }
         if (sum==num){
-            Toast.makeText(getActivity(),"The number is a Armstrong number", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(),"The number is a Armstrong number", Toast.LENGTH_LONG).show();
         }else {
-            Toast.makeText(getActivity(),"The number is not a Armstrong number", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(),"The number is not a Armstrong number", Toast.LENGTH_LONG).show();
         }
 
 

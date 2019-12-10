@@ -49,7 +49,7 @@ public class PalindromeNumberFragment extends Fragment implements View.OnClickLi
     public void onClick(View v) {
         if (TextUtils.isEmpty(etnumber.getText())) {
             etnumber.setError("Please Enter Number");
-            Toast.makeText(getActivity(), "Please Enter Number", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), "Please Enter Number", Toast.LENGTH_LONG).show();
             return;
         }
         int num = Integer.parseInt(etnumber.getText().toString());
@@ -67,9 +67,9 @@ public class PalindromeNumberFragment extends Fragment implements View.OnClickLi
         }
 
         if (r == initialNum) {
-            Toast.makeText(getActivity(),"The number is a Palindrome number", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(),"The number is a Palindrome number", Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(getActivity(),"The number is not a Palindrome number", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(),"The number is not a Palindrome number", Toast.LENGTH_LONG).show();
         }
 
     }

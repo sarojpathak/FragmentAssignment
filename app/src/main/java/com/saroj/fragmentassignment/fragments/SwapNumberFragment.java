@@ -57,9 +57,9 @@ public class SwapNumberFragment extends Fragment implements View.OnClickListener
         num1=num1-num2;//a=20 (30-10)
 
         if (num1==num2){
-            Toast.makeText(getActivity(),"The number is a Swap number", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(),"The number is a Swap number", Toast.LENGTH_LONG).show();
         }else {
-            Toast.makeText(getActivity(),"The number is not a Swap number", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(),"The number is not a Swap number", Toast.LENGTH_LONG).show();
         }
 
     }

@@ -1,5 +1,7 @@
 package com.saroj.fragmentassignment.fragments;
 
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,9 +10,11 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.saroj.fragmentassignment.R;
 
@@ -53,12 +57,16 @@ public class SimpleInterestFragment extends Fragment implements View.OnClickList
     public void onClick(View v) {
         if(TextUtils.isEmpty(etprinciple.getText())){
             etprinciple.setError("please enter Principal");
+            Toast.makeText(getActivity(), "please enter Principal", Toast.LENGTH_SHORT).show();
             return;
         }else if (TextUtils.isEmpty(ettime.getText())) {
-            ettime.setError("Please enter Time");
+            ettime.setError("Please enter Time in year");
+            Toast.makeText(getActivity(), "Please enter Time in year", Toast.LENGTH_SHORT).show();
             return;
         }else if(TextUtils.isEmpty(etrate.getText())){
             etrate.setError("Please enter Rate");
+            Toast.makeText(getActivity(), "Please enter Rate", Toast.LENGTH_SHORT).show();
+            return;
         }
         float P, T, R, Result;
         P = Float.parseFloat(etprinciple.getText().toString());
@@ -68,4 +76,5 @@ public class SimpleInterestFragment extends Fragment implements View.OnClickList
         res.setText(Result +"");
 
     }
+
 }

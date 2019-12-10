@@ -55,9 +55,9 @@ public class AutomorphicFragment extends Fragment implements View.OnClickListene
         rem = sq%div;
 
         if (rem==num){
-            Toast.makeText(getActivity(),"The number is a Automorphic number", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(),"The number is a Automorphic number", Toast.LENGTH_LONG).show();
         }else {
-            Toast.makeText(getActivity(),"The number is not a Automorphic number", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(),"The number is not a Automorphic number", Toast.LENGTH_LONG).show();
         }
 
     }
