@@ -13,6 +13,7 @@ import com.saroj.fragmentassignment.fragments.ArmstrongNumberFragment;
 import com.saroj.fragmentassignment.fragments.AutomorphicFragment;
 import com.saroj.fragmentassignment.fragments.PalindromeNumberFragment;
 import com.saroj.fragmentassignment.fragments.SimpleInterestFragment;
+import com.saroj.fragmentassignment.fragments.SwapNumberFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -91,19 +92,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        btnswap.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                FragmentManager fragmentManager = getSupportFragmentManager();
-//                FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
-//
-//                SwapNumberFragment swapNumberFragment = new SwapNumberFragment();
-//                fragmentTransaction.replace(R.id.fragView,swapNumberFragment);
-//                fragmentTransaction.commit();
-//
-//
-//            }
-//        });
+        btnswap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
+
+                SwapNumberFragment swapNumberFragment = new SwapNumberFragment();
+                fragmentTransaction.replace(R.id.fragView,swapNumberFragment);
+                fragmentTransaction.commit();
+
+
+            }
+        });
 
     }
 }
