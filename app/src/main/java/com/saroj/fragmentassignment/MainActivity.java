@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.saroj.fragmentassignment.fragments.AreaofCircleFragment;
+import com.saroj.fragmentassignment.fragments.ArmstrongNumberFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,18 +40,18 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-//        btnarmstrong.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                FragmentManager fragmentManager = getSupportFragmentManager();
-//                FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
-//
-//                ArmstrongNumberFragment armstrongNumberFragment= new ArmstrongNumberFragment();
-//                fragmentTransaction.replace(R.id.fragView, armstrongNumberFragment);
-//                fragmentTransaction.commit();
-//            }
-//        });
-//
+        btnarmstrong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
+
+                ArmstrongNumberFragment armstrongNumberFragment= new ArmstrongNumberFragment();
+                fragmentTransaction.replace(R.id.fragView, armstrongNumberFragment);
+                fragmentTransaction.commit();
+            }
+        });
+
 //        btnautomorphic.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
