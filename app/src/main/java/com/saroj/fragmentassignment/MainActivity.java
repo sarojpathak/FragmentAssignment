@@ -10,6 +10,9 @@ import android.widget.Button;
 
 import com.saroj.fragmentassignment.fragments.AreaofCircleFragment;
 import com.saroj.fragmentassignment.fragments.ArmstrongNumberFragment;
+import com.saroj.fragmentassignment.fragments.AutomorphicFragment;
+import com.saroj.fragmentassignment.fragments.PalindromeNumberFragment;
+import com.saroj.fragmentassignment.fragments.SimpleInterestFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,42 +55,42 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        btnautomorphic.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                FragmentManager fragmentManager = getSupportFragmentManager();
-//                FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
-//
-//                AutomorphicFragment automorphicFragment= new AutomorphicFragment();
-//                fragmentTransaction.replace(R.id.fragView, automorphicFragment);
-//                fragmentTransaction.commit();
-//            }
-//        });
-//
-//        btnpalindrome.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                FragmentManager fragmentManager = getSupportFragmentManager();
-//                FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
-//
-//                PalindromeNumberFragment palindromeNumberFragment = new PalindromeNumberFragment();
-//                fragmentTransaction.replace(R.id.fragView,palindromeNumberFragment);
-//                fragmentTransaction.commit();
-//
-//            }
-//        });
-//        btnsimpleinterest.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                FragmentManager fragmentManager = getSupportFragmentManager();
-//                FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
-//
-//                SimpleInterestFragment simpleInterestFragment = new SimpleInterestFragment();
-//                fragmentTransaction.replace(R.id.fragView,simpleInterestFragment);
-//                fragmentTransaction.commit();
-//            }
-//        });
-//
+        btnautomorphic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
+
+                AutomorphicFragment automorphicFragment= new AutomorphicFragment();
+                fragmentTransaction.replace(R.id.fragView, automorphicFragment);
+                fragmentTransaction.commit();
+            }
+        });
+
+        btnpalindrome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
+
+                PalindromeNumberFragment palindromeNumberFragment = new PalindromeNumberFragment();
+                fragmentTransaction.replace(R.id.fragView,palindromeNumberFragment);
+                fragmentTransaction.commit();
+
+            }
+        });
+        btnsimpleinterest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
+
+                SimpleInterestFragment simpleInterestFragment = new SimpleInterestFragment();
+                fragmentTransaction.replace(R.id.fragView,simpleInterestFragment);
+                fragmentTransaction.commit();
+            }
+        });
+
 //        btnswap.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
