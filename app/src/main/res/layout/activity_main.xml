@@ -1,18 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <GridLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:columnCount="2"
+        android:rowCount="3">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area Of Circle"
+            android:textSize="10sp"
+            android:id="@+id/btnareaofcircle"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ArmStrong Number"
+            android:textSize="10sp"
+            android:id="@+id/btnarmstrong"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Automorphic Number"
+            android:textSize="10sp"
+            android:id="@+id/btnautomorphic"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Palindrome Number"
+            android:textSize="10sp"
+            android:id="@+id/btnpalindrome"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simple Interest"
+            android:textSize="10sp"
+            android:id="@+id/btnsimpleinterest"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swap Number"
+            android:textSize="10sp"
+            android:id="@+id/btnswap"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/fragView">
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
